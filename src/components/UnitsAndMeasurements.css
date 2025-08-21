@@ -1,0 +1,45 @@
+.units-chapter section {
+  margin-bottom: 2rem;
+}
+
+.ruler .pointer {
+  animation: slide 4s infinite alternate;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(240px);
+  }
+}
+
+.area .expanding {
+  animation: grow 3s infinite alternate;
+}
+
+@keyframes grow {
+  from {
+    width: 10px;
+    height: 10px;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.dial .needle {
+  transform-origin: 60px 60px;
+  animation: swing 2s infinite alternate ease-in-out;
+}
+
+@keyframes swing {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
